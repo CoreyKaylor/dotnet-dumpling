@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    
+    <!-- Global Tool Configuration -->
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>dumpling</ToolCommandName>
+    
+    <!-- NuGet Package Metadata -->
+    <PackageId>dotnet-dumpling</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Corey Kaylor</Authors>
+    <Product>Dumpling</Product>
+    <Title>Dumpling - .NET Memory Dump Analyzer</Title>
+    <Description>A delightful CLI tool for analyzing .NET memory dumps (.gcdump files). Provides heap analysis, type statistics, retained size calculations, object inspection, and memory leak detection with both command-line and interactive modes.</Description>
+    <Summary>Cross-platform .NET global tool for analyzing heap dumps and finding memory issues</Summary>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/CoreyKaylor/dotnet-dumpling</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CoreyKaylor/dotnet-dumpling</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>dotnet;tool;memory;heap;gcdump;diagnostics;perfview;analyzer;leak-detection</PackageTags>
+    <PackageReleaseNotes>Initial release with basic heap analysis and comparison features.</PackageReleaseNotes>
+    
+    <!-- Package Quality -->
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Spectre.Console" Version="0.50.0" />
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dumpling.Core\Dumpling.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
