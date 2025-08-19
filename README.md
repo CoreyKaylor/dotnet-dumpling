@@ -21,7 +21,6 @@ Dumpling is a cross-platform .NET global tool that helps developers analyze heap
 ## Installation
 
 ```bash
-# Not yet available - coming soon!
 dotnet tool install -g dotnet-dumpling
 ```
 
