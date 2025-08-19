@@ -13,7 +13,7 @@
     
     <!-- NuGet Package Metadata -->
     <PackageId>dotnet-dumpling</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Corey Kaylor</Authors>
     <Product>Dumpling</Product>
     <Title>Dumpling - .NET Memory Dump Analyzer</Title>
