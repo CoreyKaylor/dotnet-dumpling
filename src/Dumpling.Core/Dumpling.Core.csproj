@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.1.13" />
-    <PackageReference Include="Microsoft.Diagnostics.Monitoring.EventPipe" Version="8.0.532401" />
+    <PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.1.23" />
+    <PackageReference Include="Microsoft.Diagnostics.Monitoring.EventPipe" Version="9.0.637302" />
   </ItemGroup>
 
 </Project>
